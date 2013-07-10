@@ -1,0 +1,37 @@
+/* variables, mixins, base styles */
+/* line 61, ../../../../../../../tedcoyle.rvm/gems/ruby-1.9.3-p429/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../../tedcoyle.rvm/gems/ruby-1.9.3-p429/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 8, ../sass/base-mixins.scss */
+.one {
+  margin-top: 1.5em;
+}
+
+/* line 9, ../sass/base-mixins.scss */
+.three {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+/* line 10, ../sass/base-mixins.scss */
+.four {
+  margin-bottom: 1.5em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 1.4375em;
+}
+
+/* line 11, ../sass/base-mixins.scss */
+.rborder {
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 1.4375em;
+}

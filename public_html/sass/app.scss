@@ -1,0 +1,104 @@
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+//@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+@import "foundation/components/global"; // *always required
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+@import "foundation/components/top-bar";  // *requires components/grid
+@import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing"; // responsive same height lightboxes
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+@import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+@import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+@import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+// Custom Styles
+@import "base-mixins";
+
+// Mobile First Media Queries
+/* any device that supports media queries */
+@media #{$screen} { 
+	.row .row { @include grid-row('collapse'); }
+
+	.main {
+		width: 99%;
+		& > section { @include grid-column(8); padding-right: emCalc(30px) }
+	  & > aside { 
+	  	@include grid-column(4);
+			& > section {
+	  	@include panel; 
+	  	@include radius;
+	  	ul { margin-left: 20px; } 
+	  	}
+	  }
+	}
+	.highlight {
+		@include grid-row('collapse');
+		& > div { 
+			@include panel;
+			@include radius;
+			@include grid-column(10, $offset: 1);
+		}
+		& hgroup { width: 30%; float: left; }
+		& section { width: 65%; float: right; margin-top:0.35em; padding-right: 0.2em;  }
+	}
+	form button {
+		@include button;
+	}
+}
+
+/* 768px wide. This is where the grid changes. */
+@media #{$small} { 
+
+}
+
+/* 1280px wide. */
+@media #{$medium} { 
+
+}
+
+/* 1440px wide. */
+@media #{$large} { 
+
+}
+
+/* Apply styles to screens in landscape orientation */
+@media #{$landscape} { }
+
+/* Apply styles to screens in portrait orientation */
+@media #{$portrait} { }
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element {}
+
