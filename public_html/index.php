@@ -8,6 +8,8 @@
 		'widgets' => $config["widgets"]["features"]
 								.","
 								.$config["widgets"]["newsletter"]
+								.","
+								.$config["widgets"]["using"]
 	);
 	
 	renderLayout("_home.php", $variables);
