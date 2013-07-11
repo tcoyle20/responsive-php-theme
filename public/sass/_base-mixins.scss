@@ -1,0 +1,41 @@
+/* variables, mixins, base styles */
+
+// Colors
+$primary-color: #2ba6cb;
+$secondary-color: #cbcbcb;
+$third-color: #e5780d;
+$alert-color: #c60f13;
+$success-color: #5da423;
+$code-color: shade($alert-color, 20%);
+
+
+// Typography
+@import "compass/typography"; 
+$base-font-size: 16px; 
+$base-line-height: 24px;
+@include establish-baseline; 
+body { 
+	font-family: 'Helvetica Neue', sans-serif;
+	// @include debug-vertical-alignment();  
+} 
+h1 { @include adjust-font-size-to(44px); color: $primary-color; } 
+h2 { @include adjust-font-size-to(36px); color: $secondary-color; } 
+h3 { @include adjust-font-size-to(24px); @include adjust-leading-to(1); color: $third-color; } 
+h4 { @include adjust-font-size-to(20px); } 
+h5 { @include adjust-font-size-to(18px); } 
+p { 
+	@include adjust-font-size-to(15px);
+	@include adjust-leading-to(0.9);
+	@include leader(0.4);
+}
+li { 
+	@include adjust-font-size-to(15px);
+	@include adjust-leading-to(0.6);
+	@include leader(0.3);
+}
+.code {
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	@include adjust-font-size-to(14px);
+	@include adjust-leading-to(0.8);
+	color: $code-color;
+}
