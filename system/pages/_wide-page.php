@@ -23,10 +23,11 @@
 			<h3>Flexible Templates</h3>
 		</hgroup>
 		<section>
-			<p>Quickly create alternate, reusable layouts. Finish small jobs faster with
-				reliable, responsive templates and all of Foundation's tools.</p>
-			<p>This mini framework is easy to extend, but the good thing is that you can add
-				only what you need.</p>
+			<p>Quickly create reusable layouts, new PHP logic or DB methods. Finish small 
+				jobs faster with reliable, responsive templates...Foundation makes the job 
+				so easy.</p>
+			<p>These templates keep things simple by design - sometimes you just don't need
+			 the kitchen sink. But most key elements are there to build on.</p>
 		</section>
 	</div>
 </section>

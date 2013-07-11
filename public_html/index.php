@@ -7,8 +7,6 @@
 		'description' => 'Meta tag in head',
 		'widgets' => $config["widgets"]["features"]
 								.","
-								.$config["widgets"]["using"]
-								.","
 								.$config["widgets"]["newsletter"]
 	);
 	

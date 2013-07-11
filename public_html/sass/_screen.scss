@@ -1,0 +1,58 @@
+	.top-bar {
+		h1 a { text-decoration: none; }
+		.top-bar-section ul li {
+			@include adjust-font-size-to(16px);
+			margin: 0;
+			& > a { text-decoration: none; }
+		}		
+	}
+
+
+	.row .row { @include grid-row('collapse'); }
+
+	.main {
+		width: 99%;
+		@include grid-background;
+
+		& > section { @include grid-column(8); padding-right: emCalc(30px) }
+	  & > aside { 
+	  	@include grid-column(4);
+			& > section {
+		  	@include panel; 
+		  	@include radius;
+		  	h3 { margin-bottom: 0.4em; }
+		  	ul { 
+		  		list-style: disc;
+		  		margin-left: 20px;
+		  		li:first-child { margin-top: 0; } 
+		  	}
+		  	.code { color: $code-color; } 
+	  	}
+	  }
+	}
+	.highlight {
+		@include grid-row('collapse');
+		& > div { 
+			@include panel;
+			@include radius;
+			@include grid-column(10, $offset: 1);
+			margin-top: 16px;
+		}
+		& hgroup { width: 30%; float: left; padding-left: 0.4em; }
+		& section { 
+			width: 65%; float: right; padding:0.1em 0.5em 0;  
+			p:first-child { margin-top: 0; }
+		}
+	}
+	form {
+		fieldset { @include radius; }
+		button { 
+			@include button-base;
+		  @include button-size();
+		  @include button-style;
+		  @include radius;
+		  @include single-transition;
+		  width: 50%;
+		  margin: auto 25%;
+		}
+	}

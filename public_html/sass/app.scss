@@ -1,11 +1,12 @@
-// Comment out this import if you don't want to use normalize
-@import "normalize";
+// Global Foundation Settings
+@import "settings";
 
-// Comment out this import if you are customizing you imports below
+// I don't like Foundation's Reset
+@import "compass/reset";
+
+// Comment out this import if you are customizing your imports below
 //@import "foundation";
 
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
 @import "foundation/components/global"; // *always required
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
@@ -48,33 +49,7 @@
 // Mobile First Media Queries
 /* any device that supports media queries */
 @media #{$screen} { 
-	.row .row { @include grid-row('collapse'); }
-
-	.main {
-		width: 99%;
-		& > section { @include grid-column(8); padding-right: emCalc(30px) }
-	  & > aside { 
-	  	@include grid-column(4);
-			& > section {
-	  	@include panel; 
-	  	@include radius;
-	  	ul { margin-left: 20px; } 
-	  	}
-	  }
-	}
-	.highlight {
-		@include grid-row('collapse');
-		& > div { 
-			@include panel;
-			@include radius;
-			@include grid-column(10, $offset: 1);
-		}
-		& hgroup { width: 30%; float: left; }
-		& section { width: 65%; float: right; margin-top:0.35em; padding-right: 0.2em;  }
-	}
-	form button {
-		@include button;
-	}
+	@import "screen";
 }
 
 /* 768px wide. This is where the grid changes. */

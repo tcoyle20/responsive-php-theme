@@ -1,9 +1,9 @@
 <section>
 	<h3>Using Widgets</h3>
-	<p>Chain widgets to include them:</p>
-	<code>widgets['features']<br />
-		.","<br />
-		.widgets['using']<br />
-		.","<br />
-		.widgets['newsletter']</code>
+	<p>Widgets are easily called:</p>
+	<p class="code">
+		widgets['features']<br />
+		widgets['using']<br />
+		widgets['newsletter']
+	</p>
 </section>

@@ -1,6 +1,6 @@
 <form>
   <fieldset>
-    <legend>Join Newsletter</legend>
+    <legend>Widgets Go Here</legend>
 
     <label>Please?</label>
     <input type="text" placeholder="email address">

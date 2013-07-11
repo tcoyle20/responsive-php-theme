@@ -3,7 +3,7 @@
 	require_once(TEMPLATES_PATH . "/layoutWidePage.php");
 	
 	$variables = array(
-		'title' => "An Wide Layout",
+		'title' => "A Wider Layout",
 		'description' => "Just an alternate layout",
 		'baseUrl' => $config["urls"]["baseUrl"]
 	);
