@@ -31,6 +31,12 @@ $config = array(
 /*
 Below can also be placed in environment variables
 */
+defined('DS')
+	or define('DS', DIRECTORY_SEPARATOR);
+
+defined('ROOT')
+	or define('ROOT', dirname(dirname(__FILE__)));
+
 defined("CLASS_PATH")
 	or define("CLASS_PATH", realpath(dirname(__FILE__) . '/class'));
 	

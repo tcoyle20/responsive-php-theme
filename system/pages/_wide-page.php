@@ -2,15 +2,15 @@
 	<div class="small-10 small-centered columns">
 		<ul data-orbit>
 		  <li>
-		    <img src="/img/content/wales.png" />
+		    <img src="/img/content/wales.jpg" />
 		    <div class="orbit-caption">...</div>
 		  </li>
 		  <li>
-		    <img src="/img/content/austin.png" />
+		    <img src="/img/content/austin.jpg" />
 		    <div class="orbit-caption">...</div>
 		  </li>
 		  <li>
-		    <img src="/img/content/autumn.png" />
+		    <img src="/img/content/autumn.jpg" />
 		    <div class="orbit-caption">...</div>
 		  </li>
 		</ul>

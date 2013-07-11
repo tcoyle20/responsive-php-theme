@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width" />
   <title><?php echo $title; ?></title>
   <link rel="stylesheet" href="stylesheets/app.css" />
+  <!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/ie.css" /><![endif]-->
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
 <body>
